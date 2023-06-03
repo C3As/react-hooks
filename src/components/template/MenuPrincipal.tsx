@@ -5,13 +5,14 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
+import { IconNumbers } from "@tabler/icons";
 
 export default function MenuPrincipal() {
     const secoes = [
         {
             titulo: "Essenciais",
             aberta: true,
-            itens: [],
+            itens: [{ titulo: "Contador", url: "/essenciais/contador", tag:"useState", icone:<IconNumbers/> }],
         },
     ];
     const mini = false;
