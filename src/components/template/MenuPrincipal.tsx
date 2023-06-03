@@ -5,14 +5,18 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
-import { IconNumbers } from "@tabler/icons";
+import { IconNumbers, IconUsers } from "@tabler/icons";
 
 export default function MenuPrincipal() {
     const secoes = [
         {
             titulo: "Essenciais",
             aberta: true,
-            itens: [{ titulo: "Contador", url: "/essenciais/contador", tag:"useState", icone:<IconNumbers/> }],
+            itens: [
+                { titulo: "Contador", url: "/essenciais/contador", tag:"useState", icone:<IconNumbers/> },
+                { titulo: "Votação", url: "/essenciais/votacao", tag:"useState", icone:<IconUsers/> },
+            ],
+
         },
     ];
     const mini = false;
