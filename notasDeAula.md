@@ -16,3 +16,13 @@
 
 => useState faz com que um codigo se renderize mais de uma vez
 => useEffect(() => {callback}, []) - é usado para a execução de uma função quando as variaveis dentro do array se alterarem, no caso do array vazio a função será executada uma única vez quando o componente é renderizado
+
+=> efeito de limpeza para evitar renderizações a cada caracter digitado usando setTimout e clearTimeout. isso faz com que a renderização só ocorra ao interromper a digitação - arquivo contagemCaracteresEffetc.tsx
+
+     useEffect(() => {
+        let timer = setTimeout(() => {
+            let aux = quantCaracteres - texto.length
+            setRestantesCaracteres(aux)
+        },1000);
+        return () => clearTimeout(timer);
+    },[texto])
