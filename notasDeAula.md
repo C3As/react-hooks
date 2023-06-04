@@ -13,3 +13,6 @@
     }
 
 => No react devemos considerar como efeito colateral tudo aquilo que não está ligado a renderização especificamente do programa e tudo aquilo que não está ligado ao input do usuário
+
+=> useState faz com que um codigo se renderize mais de uma vez
+=> useEffect(() => {callback}, []) - é usado para a execução de uma função quando as variaveis dentro do array se alterarem, no caso do array vazio a função será executada uma única vez quando o componente é renderizado

@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
-import { IconNumbers, IconUsers } from "@tabler/icons";
+import { IconArrowLeftRight, IconNumbers, IconUsers } from "@tabler/icons";
 
 export default function MenuPrincipal() {
     const secoes = [
@@ -15,6 +15,7 @@ export default function MenuPrincipal() {
             itens: [
                 { titulo: "Contador", url: "/essenciais/contador", tag:"useState", icone:<IconNumbers/> },
                 { titulo: "Votação", url: "/essenciais/votacao", tag:"useState", icone:<IconUsers/> },
+                { titulo: "Consulta API", url: "/essenciais/consultaAPI", tag:"useEffect", icone:<IconArrowLeftRight/> },
             ],
 
         },
