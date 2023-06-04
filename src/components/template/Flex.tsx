@@ -10,6 +10,7 @@ export interface FlexProps {
 
 export default function Flex(props: FlexProps) {
     return (
+        
         <div className={`
             flex
             ${props.col ? 'flex-col' : ''}
