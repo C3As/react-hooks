@@ -28,3 +28,6 @@
     },[texto])
 
 => useRef referencia um elemento/variavel que é alterada não é necessário a renderização apara atualizar o valor da varíavel, ao contrário de useState, retorna um objeto com uma propriedade current. O ideal de usar useRef é para armazenar informações que não virão para a tela. O objeto do useRef sempre será o mesmo mas a propriedade current do useRef pode ser alterada
+
+=> arquivos de hooks personalizados sempre iniciuarão com use.....ts, por convençãp
+    -> primeiro exemplo useToggle - boolean falso verdadeiro

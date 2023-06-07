@@ -12,8 +12,10 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/jsx-runtime",
-        "react-app"
+        "react-app",
+        "prettier"
     ],
     "overrides": [
     ],
@@ -22,7 +24,8 @@
         "ecmaVersion": "latest",
         "sourceType": "module",
         "ecamFeatures": {
-          "jsx": true
+          "jsx": true,
+          "tsx": true
         }
     },
     "plugins": [
