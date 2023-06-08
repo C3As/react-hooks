@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
-import { IconAppWindow, IconArrowLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection, IconUsers, IconX } from "@tabler/icons";
+import { IconAppWindow, IconArrowLeftRight, IconDimensions, IconLetterCase, IconLock, IconMathGreater, IconMenu, IconNumbers, IconRefreshAlert, IconSection, IconUsers, IconX, IconShoppingCart } from "@tabler/icons";
 import useBoolean from "@/src/data/hooks/useBoolean";
 import useTamanhoJanela from "@/src/data/hooks/useTamanhoJanela";
 import { useEffect } from "react";
@@ -36,7 +36,14 @@ export default function MenuPrincipal() {
                 { titulo: "Tamanho Janela", url: "/personalizados/tamanhoJanela", tag:"personalizados", icone:<IconDimensions/> },
                 { titulo: "Validando senha", url: "/personalizados/senha", tag:"personalizados", icone:<IconLock/> },
             ]
-        }
+        },
+        {
+            titulo: "Contexto",
+            aberta: true,
+            itens: [
+                { titulo: "Loja", url:"/contexto/loja", tag:"contexto", icone:<IconShoppingCart/> },
+            ]   
+        },
     ];
     const [mini, toggleMini, miniTrue] = useBoolean(false);
     let tamanho = useTamanhoJanela();

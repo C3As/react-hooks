@@ -1,4 +1,4 @@
-import InputFormatado from "@/src/components/template/InputFormatado";
+import InputFormatado from "@/src/components/formulario/InputFormatado";
 import Pagina from "@/src/components/template/Pagina";
 import useStateValidado from "../../data/hooks/useStateValidado";
 

@@ -36,3 +36,17 @@
     -> https://blog.geekhunter.com.br/eslint-typescript-tutorial/
 
 => Hook personalizado useToggle sendo utilizado para expandir seções ver MenuPrincipal e MenuPrincipalSecao - INTERESSANTE
+
+=> useContext permite que uma componente armazene e possa prover estas informações para outros componentes
+
+=> usando context a variavel criada com createContext será a mesma que chamará Provider - ver loja.tsx
+  -> export let Contexto = createContext({} as any); // export dá acesso a outras componentes as informacções de Contexto
+    const [valor, setValor] = useState([]); //informações que estarão disponiveis no Contexto
+    const ctx = { valor, setValor}
+    <Contexto.Provider value={ctx}>
+      tudo que estiver dentro terá acesso ao Contexto
+    </Contexto.Provider>
+    -> para utilizar os dados de Contexto, na componente que utilizará será necessário importar usando:
+        import { Contexto } from "@/src/pages/contexto/loja";
+        ....
+        const {valor} = useContext(Contexto);
