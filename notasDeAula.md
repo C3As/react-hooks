@@ -31,3 +31,8 @@
 
 => arquivos de hooks personalizados sempre iniciuarão com use.....ts, por convençãp
     -> primeiro exemplo useToggle - boolean falso verdadeiro
+
+=> regras eslint para ts
+    -> https://blog.geekhunter.com.br/eslint-typescript-tutorial/
+
+=> Hook personalizado useToggle sendo utilizado para expandir seções ver MenuPrincipal e MenuPrincipalSecao - INTERESSANTE
