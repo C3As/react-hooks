@@ -50,3 +50,13 @@
         import { Contexto } from "@/src/pages/contexto/loja";
         ....
         const {valor} = useContext(Contexto);
+
+    -> Numa aplicação pode existir contextos que poderão aplicados de maneira global ou especificos para uma parte do código, normalmente se trabalha com uma pasta context dentro de data.
+        -> TemaProvider;
+        -> useTema - para facilitar a utilização/importacção com a encapsulação pois faz a lógica de invocação do contexto
+        -> inseriu TemaProvider em _app.tsx para que todos componentes tenham acesso
+
+        -> criado também MenuProvider, useMenu e arquivo secoesMenu que recebeu dados que estavam no arquivo MenuPrincipal para que estes fossem usados por MenuProvider e também outra parte do código de MenuPrincipal diretamente dentro de MenuProvider
+        -> MenuProvider também adicionado a _app.tsx
+
+Dica: onClick={() => props.onClick?.()}> // pq onClick pode ser undefined usar ?.
