@@ -60,3 +60,6 @@
         -> MenuProvider também adicionado a _app.tsx
 
 Dica: onClick={() => props.onClick?.()}> // pq onClick pode ser undefined usar ?.
+
+=> useMemo - técnica que permite que se aumente o desempenho das palicações - através da memoização permite retornar os mesmo resultados desde que os parametros não tenham sido alterados evitando que um cálculo seja feito a cada qualquer outra alteração - Pense na memorização como o armazenamento em cache de um valor para que não precise ser recalculado. O useMemoHook só é executado quando uma de suas dependências é atualizada. 
+    let nomeVariavel = useMemo(() => {função callback}, [parametros de alteração])
