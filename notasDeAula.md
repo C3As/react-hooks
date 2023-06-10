@@ -63,3 +63,5 @@ Dica: onClick={() => props.onClick?.()}> // pq onClick pode ser undefined usar ?
 
 => useMemo - técnica que permite que se aumente o desempenho das palicações - através da memoização permite retornar os mesmo resultados desde que os parametros não tenham sido alterados evitando que um cálculo seja feito a cada qualquer outra alteração - Pense na memorização como o armazenamento em cache de um valor para que não precise ser recalculado. O useMemoHook só é executado quando uma de suas dependências é atualizada. 
     let nomeVariavel = useMemo(() => {função callback}, [parametros de alteração])
+
+=> useCallback funciona quase da mesma forma que useMemo só que ao invés de armazenar o resultado, o useCallback armazena a função inteira, a função armazenada não pode conter dados que serão atualizados pois ela só será executada na primeira vez guardando os dados iniciais.

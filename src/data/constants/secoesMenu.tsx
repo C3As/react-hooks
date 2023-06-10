@@ -116,6 +116,12 @@ export const secoes = [
         tag: "useMemo",
         icone: <IconPin />,
       },
+      {
+        titulo: "Memoizando Funções",
+        url: "/outros/memoizandoFuncoes",
+        tag: "useCallback",
+        icone: <IconPin />,
+      },
     ],
   },
 ];
