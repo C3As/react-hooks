@@ -27,7 +27,7 @@
         return () => clearTimeout(timer);
     },[texto])
 
-=> useRef referencia um elemento/variavel que é alterada não é necessário a renderização apara atualizar o valor da varíavel, ao contrário de useState, retorna um objeto com uma propriedade current. O ideal de usar useRef é para armazenar informações que não virão para a tela. O objeto do useRef sempre será o mesmo mas a propriedade current do useRef pode ser alterada
+=> useRef referencia um elemento/variavel que quando alterada não é necessário a renderização para atualizar o valor da varíavel, ao contrário de useState, retorna um objeto com uma propriedade current. O ideal de usar useRef é para armazenar informações que não virão para a tela. O objeto do useRef sempre será o mesmo mas a propriedade current do useRef pode ser alterada
 
 => arquivos de hooks personalizados sempre iniciuarão com use.....ts, por convençãp
     -> primeiro exemplo useToggle - boolean falso verdadeiro
@@ -65,3 +65,6 @@ Dica: onClick={() => props.onClick?.()}> // pq onClick pode ser undefined usar ?
     let nomeVariavel = useMemo(() => {função callback}, [parametros de alteração])
 
 => useCallback funciona quase da mesma forma que useMemo só que ao invés de armazenar o resultado, o useCallback armazena a função inteira, a função armazenada não pode conter dados que serão atualizados pois ela só será executada na primeira vez guardando os dados iniciais.
+
+=> useImperativeHandle permite que se altere as referencia num componente filho
+    -> Criado arquivo InputComReferencia (alterado de InputFormatado) com principais mudanças: inclusão de ref como parametro da função, alteração do export default que inclui forwardRef(nome da função).

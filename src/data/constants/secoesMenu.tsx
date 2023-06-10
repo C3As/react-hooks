@@ -13,6 +13,7 @@ import {
   IconX,
   IconShoppingCart,
   IconPin,
+  IconForms
 } from "@tabler/icons";
 
 export const secoes = [
@@ -121,6 +122,12 @@ export const secoes = [
         url: "/outros/memoizandoFuncoes",
         tag: "useCallback",
         icone: <IconPin />,
+      },
+      {
+        titulo: "Formulario 1",
+        url: "/outros/formularioImperativeHandle",
+        tag: "useImperativeHandle",
+        icone: <IconForms />,
       },
     ],
   },
