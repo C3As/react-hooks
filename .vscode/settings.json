@@ -1,9 +1,9 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "eslint.format.enable": true,
   "sql-formatter.uppercase": true,
   "editor.formatOnSave": true
