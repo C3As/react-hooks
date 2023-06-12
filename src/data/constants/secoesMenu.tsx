@@ -13,7 +13,11 @@ import {
   IconX,
   IconShoppingCart,
   IconPin,
-  IconForms
+  IconForms,
+  IconTextColor,
+  IconColorSwatch,
+  IconDatabase,
+  IconDatabaseImport
 } from "@tabler/icons";
 
 export const secoes = [
@@ -127,6 +131,42 @@ export const secoes = [
         titulo: "Formulario 1",
         url: "/outros/formularioImperativeHandle",
         tag: "useImperativeHandle",
+        icone: <IconForms />,
+      },
+      {
+        titulo: "Texto Secreto",
+        url: "/outros/texto",
+        tag: "useLayoutEffect",
+        icone: <IconTextColor />,
+      },
+      {
+        titulo: "Gerador de Cor",
+        url: "/outros/geradorDeCor",
+        tag: "useLayoutEffect",
+        icone: <IconColorSwatch />,
+      },
+      {
+        titulo: "Soma com useState",
+        url: "/outros/somaState",
+        tag: "useState",
+        icone: <IconDatabase />,
+      },
+      {
+        titulo: "Soma com useReducer",
+        url: "/outros/somaReducer",
+        tag: "useReducer",
+        icone: <IconDatabaseImport />,
+      },
+      {
+        titulo: "Formulário 1",
+        url: "/outros/formularioId1",
+        tag: "useId",
+        icone: <IconForms />,
+      },
+      {
+        titulo: "Formulário 2",
+        url: "/outros/formularioId2",
+        tag: "useId",
         icone: <IconForms />,
       },
     ],

@@ -68,3 +68,7 @@ Dica: onClick={() => props.onClick?.()}> // pq onClick pode ser undefined usar ?
 
 => useImperativeHandle permite que se altere as referencia num componente filho
     -> Criado arquivo InputComReferencia (alterado de InputFormatado) com principais mudanças: inclusão de ref como parametro da função, alteração do export default que inclui forwardRef(nome da função).
+
+=> useLayoutEffecté uma versão de useEffect que é acionado antes que o navegador redefina a tela. No exemplo texto.tsx usando useEffect ao inves de UseLayoutEffect é possível ver a troca de texto do inicializado com o useState quase que piscando ao trocar para o texto que está dentro do useEffect, isto já não se pode ver quando utilizado o useLayoutEffect
+
+=> useReducer sempre vai trabalhar com objetos
